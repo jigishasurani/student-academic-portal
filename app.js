@@ -10,6 +10,7 @@ const errorcontroller=require('./controllers/error');
 
 const adminroute=require('./routes/admin');
 const studentroute=require('./routes/user');
+
 app.use(express.static(path.join(__dirname,'public')));
 
 app.use('/admin',adminroute);
